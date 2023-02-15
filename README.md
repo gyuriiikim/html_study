@@ -23,7 +23,7 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
   <li>oi,ul의 다음에는 <strong>li태그만 가능</strong>하고 다른 태그들은 불가능하다.</li>
   <li>header은 부모이고 자식은 meta와 title이 있으며 메타와 타이틀은 형제이다.<br>
     html은 부모이고 head는 자식이다.<br>
-    html의 자식은 첫째head이고 둘째body이다<br>
+    html의 자식은 첫째는 head이고 둘째는 body이다<br>
     html과 meta의 관계에서  자손이다
   </li>
 </ul>
