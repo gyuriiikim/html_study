@@ -14,3 +14,12 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
 내비게이션의 개념
 <p>gnb, lnb, snb, fnb, breadcrumbs</p>
 <hr>
+<h2>23.02.15 - HTML - 스타트, 레시피</h2>
+<ul>
+  <li>ol은 순서가 있는 목록의 틀이다.</li>
+  <li>li는 목록 list의 약자이다.</li>
+  <li>li의 부모는 ol,ul의 태그만 가능하다.
+  <li>li는 블록, 인라인 모두 가능하다.</li>
+  <li>oi,ul의 다음에는 li태그만 가능하고 다른 태그들은 불가능하다.</li>
+</ul>
+  
