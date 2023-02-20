@@ -95,5 +95,34 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
       </tr>
      </tbody>
   </table>
-  <dd></dd>
+  <dt>*colspan*</dt>
+  <dd>→가로 (tr)에 배치된 2개 이상의 열을 합칠때 사용</dd>
+  <dd>합치고 다음내용은 주석을 걸어주거나 지워줘야한다.</dd>
+  <dt>*rowspan*</dt>
+  <table>
+    <thead>
+      <tr>
+        <th>구분</th>
+        <th>태그명</th>
+        <th>의미</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>block</th>
+        <td>&lt;tr&lt;</td>
+        <td>가로형 태그</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>&lt;td&lt;</td>
+        <td>내용(열)태그</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>&lt;th&lt;</td>
+        <td>제목(열)태그</td>
+      </tr>
+    </tbody>
+  </table>
   </dl>
