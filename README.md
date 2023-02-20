@@ -110,7 +110,7 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
     <tbody>
       <tr>
         <th rowspan="3">block</th>
-        <td>&lt;tr&lt;</td>
+        <td>&lt;tr&gt;</td>
         <td>가로형 태그</td>
       </tr>
       <tr>
