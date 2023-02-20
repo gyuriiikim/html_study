@@ -82,13 +82,18 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
   <dd>디자인만 들어갔을 때에는 span을 사용해주는 것이 좋다.</dd>
   <dd>예시</dd>
   <table>
-    <tr>
-      <th>제1</th>
-      <th>제2</th>
-    </tr>
-    <tr>
-      <td>내1</td>
-      <td>내2</td>
-    </tr>
+    <thead>
+      <tr>
+        <th>제1</th>
+        <th>제2</th>
+      </tr>
+    </thead>
+    <tdoby>
+      <tr>
+        <td>내1</td>
+        <td>내2</td>
+      </tr>
+     </tbody>
   </table>
+  <dd></dd>
   </dl>
