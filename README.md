@@ -103,7 +103,10 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
     <li> th, td에 사용하는 속성입니다.</li>
     <li>서로 다른 가로행(tr)에 배치된 2개 이상의 열(th, td)을 합칠 때 사용합니다.</li>
     <li>rowspan의 값은 합쳐지는 총 열의 개수를 입력합니다.</li>
+    <li>행그룹에서 같은 행 그룹 안에서 합치기를 진행해야한다.(특히rowspan / tobody는 tobody끼리)</li>
+    <li>처음에는 합치는 태그를 먼저 사용하지말고 표를 완벽하게 완성한 다음에<br>합치는 태그를 마지막에 해줘야 헷갈리지 않고 할수 있다</li>
   </ul>
+  <strong>table 연습</strong>
   <table>
     <thead>
       <tr>
