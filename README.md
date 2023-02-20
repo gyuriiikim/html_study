@@ -109,17 +109,17 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
     </thead>
     <tbody>
       <tr>
-        <th>block</th>
+        <th rowspan="3">block</th>
         <td>&lt;tr&lt;</td>
         <td>가로형 태그</td>
       </tr>
       <tr>
-        <th>2</th>
+        <!--<th>2</th>-->
         <td>&lt;td&lt;</td>
         <td>내용(열)태그</td>
       </tr>
       <tr>
-        <th>3</th>
+        <!--<th>3</th>-->
         <td>&lt;th&lt;</td>
         <td>제목(열)태그</td>
       </tr>
