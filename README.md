@@ -77,4 +77,18 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
   <dd>글 옆의 이미지는 em, span을 사용해줄 경우 태그사용한 옆에 글자에는 css로 이미지를 넣어줄 수 있다.</dd>
   <dt>*표태그*</dt>
   <dd>table은 표의 태그이며, tr은 행 /td는 열 / th는 제목이다</dd>
+  <dd>tfoot는 tbody앞이나 뒤에있어도 순서가 바뀌지 않는다.</dd>
+  <dd>tfoot을 사용하게 되면 tbody의 앞에 무조건 태그를 작성해줘야한다.</dd>
+  <dd>디자인만 들어갔을 때에는 span을 사용해주는 것이 좋다.</dd>
+  <dd>예시</dd>
+  <table>
+    <tr>
+      <th>제1</th>
+      <th>제2</th>
+    </tr>
+    <tr>
+      <td>내1</td>
+      <td>내2</td>
+    </tr>
+  </table>
   </dl>
