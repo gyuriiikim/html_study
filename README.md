@@ -115,12 +115,12 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
       </tr>
       <tr>
         <!--<th>2</th>-->
-        <td>&lt;td&lt;</td>
+        <td>&lt;td&gt;</td>
         <td>내용(열)태그</td>
       </tr>
       <tr>
         <!--<th>3</th>-->
-        <td>&lt;th&lt;</td>
+        <td>&lt;th&gt;</td>
         <td>제목(열)태그</td>
       </tr>
     </tbody>
