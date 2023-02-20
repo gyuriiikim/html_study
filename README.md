@@ -98,7 +98,12 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
   <dt>*colspan*</dt>
   <dd>→가로 (tr)에 배치된 2개 이상의 열을 합칠때 사용</dd>
   <dd>합치고 다음내용은 주석을 걸어주거나 지워줘야한다.</dd>
-  <dt>*rowspan*</dt>
+  <ul>
+    <li><strong>*rowspan*</strong></li>
+    <li> th, td에 사용하는 속성입니다.</li>
+    <li>서로 다른 가로행(tr)에 배치된 2개 이상의 열(th, td)을 합칠 때 사용합니다.</li>
+    <li>rowspan의 값은 합쳐지는 총 열의 개수를 입력합니다.</li>
+  </ul>
   <table>
     <thead>
       <tr>
