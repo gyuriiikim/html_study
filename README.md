@@ -72,4 +72,8 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
   <dd>meta:kw는 키워드 / meta:desc는 description</dd>
   <dd>내가만들지 않은 페이지는 href""에 #을 넣어줘야한다.</dd>
   <dd>주메뉴에 서브가 없을 때에는 바로 a태그로 작성해주면 된다 / 서브가 있을 때에는 li태그로 작성해주면 된다.</dd>
+  <dd>nav는 header에서 한번만 사용 가능하다</dd>
+  <dd>css는 html을 만들어 주면서 진행해줘야한다. 디자인 할 부분에 html을 해줘야한다.</dd>
+  <dd>글 옆의 이미지는 em, span을 사용해줄 경우 태그사용한 옆에 글자에는 css로 이미지를 넣어줄 수 있다.</dd>
+  
   </dl>
