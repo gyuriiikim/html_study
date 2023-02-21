@@ -144,39 +144,44 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
   <fieldset>
   <legend>form 퀴즈</legend>
   <span>다음 중 label for와 연관된 ionput 속성은?</span><br>
-  <label><input type="radio" name="quiz" value="id">1. id</label>
-  <label><input type="radio" name="quiz" value="class">2. class</label>
-  <label><input type="radio" name="quiz" value="name">2. name</label>
+  <label><input type="radio" name="quiz" value="id"> 1. id</label>
+  <label><input type="radio" name="quiz" value="class"> 2. class</label>
+  <label><input type="radio" name="quiz" value="name"> 2. name</label>
+  
+  <span>다음 중 입력방식이 아닌 것은?</span>
+    <label><input type="radio" name="quiz" value="text"> 1. text</label>
+    <label><input type="radio" name="quiz" value="select"> 2. select</lable>
+    <label><input type="radio" name="quiz" value="url"> 3. url</label>
   </fieldset>
   </form>
   <dl>
-  <dt>form</dt>
-  <dd>입력, 선택 등의 정보 제출 컨트롤 요소를 묶는 틀로써 사용합니다. -> 블록이다</dd>
-  <dd>사용자가 무언갈 입력하고 작성했을 때 정보를 전송해주는 역할을 "action"이라고 한다.<br>입력된 정보를 제출하는 최종 주소(URL)은 action 속성에 입력합니다.</dd>
-  <dd>입력된 정보를 제출할 때 HTTP 정보를 method 속성에 입력합니다.(method의 값은 post, get으로 사용합니다.)</dd>
-  <dd>post : 양식 본문을 action URL에 그대로 전송합니다./ get : 양식 본문을 URL 뒤 ? 에 이어붙여서 전송합니다.</dd>
-  <dd>간단하게 post는 보안을 위한 것이고 get은 공개적인 것을 말한다.</dd>
-  <dd>바로보이는 것을 pront 안 보이는 것을 back이라고 한다.( 실무용어로 많이 사용함)</dd><br>
-  <dt>form의 그룹 *fieldset*</dt>
-  <dd>정보 컨트롤 요소 들을 용도에 맞게 그룹으로 묶을 경우 사용합니다.</dd>
-  <dd>form의 자식 요소로 배치ㅇ해야하고 ,div를 대신해서 사용 가능하다.</dd>
-  <dd>ex)회원가입 시 입력하는 필수양식, 선택양식 등의 그룹 용도</dd>
-  <dd>레전드는 화면상에서는 보이지 않는다(css에서 숨겨질 태그이기 때문에 블록 인라인 모두 가능하다)</dd><br>
-  <dt>*input*</dt>
-  <dd>웹 기반으로 사용자의 입력 및 선택 양식을 담을 때 input 태그를 사용합니다.</dd>
-  <dd>입력 및 선택 등을 구분하기 위해 input에 type 속성을 연결하여 다양한 컨트롤 양식들을 활용합니다</dd>
-  <dd>*input type의 속성*</dd>
-  <dd>속성은 입력양식 / 선택&목록 컨트롤 양식 종류에 따라 의미가 달라집니다.</dd>
-  <dd>입력양식 type ==> text, password, tel, url, email, textarea 등</dd>
-  <dd>선택양식 type ==> checkbox, radio, option, select 등</dd>
-  <dd>input요소에는 반드시 네임이 들어가야한다</dd>
-  <dt>*label*</dt>
-  <dd>글자와 함께 배치된 형태의 input 작업 시 선택편의성을 높이기 위해 사용하는 태그입니다.</dd>
-  <dd>모든 input에 사용가능하나 일반적으로 checkbox, radio에서 편의성 목적으로 많이 사용합니다.</dd>
-  <dd>input의 부모로 감싸거나 형제요소로 사용할 수 있습니다.</dd>
-  <dd>연결하려는 input이 가진 id 명과 동일한 값을 label의 for 속성 값으로 입력해야 합니다.</dd>
-  <dt>*목록 select, option*</dt>
-  <dd>select는 목록(option)을 묶어주는 부모 대상입니다.</dd>
-  <dd>option은 select의 자식으로 목록을 의미합니다.</dd>
+    <dt>form</dt>
+    <dd>입력, 선택 등의 정보 제출 컨트롤 요소를 묶는 틀로써 사용합니다. -> 블록이다</dd>
+    <dd>사용자가 무언갈 입력하고 작성했을 때 정보를 전송해주는 역할을 "action"이라고 한다.<br>입력된 정보를 제출하는 최종 주소(URL)은 action 속성에 입력합니다.</dd>
+    <dd>입력된 정보를 제출할 때 HTTP 정보를 method 속성에 입력합니다.(method의 값은 post, get으로 사용합니다.)</dd>
+    <dd>post : 양식 본문을 action URL에 그대로 전송합니다./ get : 양식 본문을 URL 뒤 ? 에 이어붙여서 전송합니다.</dd>
+    <dd>간단하게 post는 보안을 위한 것이고 get은 공개적인 것을 말한다.</dd>
+    <dd>바로보이는 것을 pront 안 보이는 것을 back이라고 한다.( 실무용어로 많이 사용함)</dd><br>
+    <dt>form의 그룹 *fieldset*</dt>
+    <dd>정보 컨트롤 요소 들을 용도에 맞게 그룹으로 묶을 경우 사용합니다.</dd>
+    <dd>form의 자식 요소로 배치ㅇ해야하고 ,div를 대신해서 사용 가능하다.</dd>
+    <dd>ex)회원가입 시 입력하는 필수양식, 선택양식 등의 그룹 용도</dd>
+    <dd>레전드는 화면상에서는 보이지 않는다(css에서 숨겨질 태그이기 때문에 블록 인라인 모두 가능하다)</dd><br>
+    <dt>*input*</dt>
+    <dd>웹 기반으로 사용자의 입력 및 선택 양식을 담을 때 input 태그를 사용합니다.</dd>
+    <dd>입력 및 선택 등을 구분하기 위해 input에 type 속성을 연결하여 다양한 컨트롤 양식들을 활용합니다</dd>
+    <dd>*input type의 속성*</dd>
+    <dd>속성은 입력양식 / 선택&목록 컨트롤 양식 종류에 따라 의미가 달라집니다.</dd>
+    <dd>입력양식 type ==> text, password, tel, url, email, textarea 등</dd>
+    <dd>선택양식 type ==> checkbox, radio, option, select 등</dd>
+    <dd>input요소에는 반드시 네임이 들어가야한다</dd>
+    <dt>*label*</dt>
+    <dd>글자와 함께 배치된 형태의 input 작업 시 선택편의성을 높이기 위해 사용하는 태그입니다.</dd>
+    <dd>모든 input에 사용가능하나 일반적으로 checkbox, radio에서 편의성 목적으로 많이 사용합니다.</dd>
+    <dd>input의 부모로 감싸거나 형제요소로 사용할 수 있습니다.</dd>
+    <dd>연결하려는 input이 가진 id 명과 동일한 값을 label의 for 속성 값으로 입력해야 합니다.</dd>
+    <dt>*목록 select, option*</dt>
+    <dd>select는 목록(option)을 묶어주는 부모 대상입니다.</dd>
+    <dd>option은 select의 자식으로 목록을 의미합니다.</dd>
   
   </dl>
