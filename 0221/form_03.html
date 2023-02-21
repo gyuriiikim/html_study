@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-3</title>
+    <style>
+        table,tr,td,th {border:2px solid black;}
+    </style>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>가입양식</legend>
+            <p><input type="checkbox">모든 이용 약관에 동의합니다.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">구분</th>
+                        <th scope="col">내용</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">아이디</th>
+                        <td><input type="text" name="user_id" maxlength="12" placeholder="영문소문자/숫자 입력" autofocus>*최대 12글자 제한</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">비밀번호</th>
+                        <td><input type="text" name="user_pw" placeholder="아이디와 다르게 입력"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">주민등록번호</th>
+                        <td><input type="text" name="number" placeholder="주민등록번호 앞 6자리" maxlength="6">-<input type="text" name="number" placeholder="주민등록번호 뒤 7자리" maxlenght="7"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">성별</th>
+                        <td>남<label><input type="radio" name="gender" id="male" value="male"></label>
+                            여<label><input type="radio" name="gender" id="female" value="female"></label></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">관심 직종</th>
+                        <td><label>웹기획자<input type="checkbox" name="hobby" value="web"></label>
+                        <label>편집디자이너<input type="checkbox" name="hobby" value="ed"></label>               
+                        <label>웹디자이너<input type="checkbox" name="hobby" value="web_d"></label>               
+                        <label>웹퍼블리셔<input type="checkbox" name="hobby" value="web_pb"></label>               
+                        <label>프론트앤드개발자<input type="checkbox" name="hobby" value="pr_de"></label>               
+                        <label>백엔드개발자<input type="checkbox" name="hobby" value="back_de"></label></td>                 
+                    </tr>
+                    <tr>
+                        <th scope="row">휴대전화</th>
+                        <td>
+                            <select name="telwcom">
+                                <option value="none">통신사</option>
+                                <option value="KT">KT</option>
+                                <option value="SKT">SKT</option>
+                                <option value="LGU+">LGU+</option>
+                            </select>
+                            <input type="text" name="phone_num_first" maxlength="4">-<input type="text" name="phone_num_last" maxlength="4">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">이메일</th>
+                        <td>
+                            <input type="email" name="user_E" placeholder="메일 아이디 입력">
+                            @
+                            <select name="mail_address">
+                                <option value="none">메일 주소를 선택하세요</option>
+                                <option value="gmail">gmail.com</option>
+                                <option vlaue="naver">naver.com</option>
+                                <option vlaue="han">hanmail.net</option>
+                                <option vlaue="nate">nate.com</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">인사말</th>
+                        <td>text</td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
