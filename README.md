@@ -140,6 +140,7 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
   </dl>
   <hr>
   <h2>23.02.21 - HTML - form</h2>
+  <dl>
   <dt>form</dt>
   <dd>입력, 선택 등의 정보 제출 컨트롤 요소를 묶는 틀로써 사용합니다. -> 블록이다</dd>
   <dd>사용자가 무언갈 입력하고 작성했을 때 정보를 전송해주는 역할을 "action"이라고 한다.<br>입력된 정보를 제출하는 최종 주소(URL)은 action 속성에 입력합니다.</dd>
@@ -158,3 +159,4 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
   <dd>속성은 입력양식 / 선택&목록 컨트롤 양식 종류에 따라 의미가 달라집니다.</dd>
   <dd>입력양식 type ==> text, password, tel, url, email, textarea 등</dd>
   <dd>선택양식 type ==> checkbox, radio, option, select 등</dd>
+  </dl>
