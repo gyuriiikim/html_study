@@ -144,14 +144,14 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
   <fieldset>
   <legend>form 퀴즈</legend>
   <span>다음 중 label for와 연관된 ionput 속성은?</span><br>
-  <label><input type="radio" name="quiz" value="id"> 1. id</label>
-  <label><input type="radio" name="quiz" value="class"> 2. class</label>
-  <label><input type="radio" name="quiz" value="name"> 2. name</label>
+  <label><input type="radio" name="quiz" value="id"> 1. id</label><br>
+  <label><input type="radio" name="quiz" value="class"> 2. class</label><br>
+  <label><input type="radio" name="quiz" value="name"> 2. name</label><br>
   
-  <span>다음 중 입력방식이 아닌 것은?</span>
-    <label><input type="radio" name="quiz" value="text"> 1. text</label>
-    <label><input type="radio" name="quiz" value="select"> 2. select</lable>
-    <label><input type="radio" name="quiz" value="url"> 3. url</label>
+  <span>다음 중 입력방식이 아닌 것은?</span><br>
+    <label><input type="radio" name="quiz" value="text"> 1. text</label><br>
+    <label><input type="radio" name="quiz" value="select"> 2. select</lable><br>
+    <label><input type="radio" name="quiz" value="url"> 3. url</label><br>
   </fieldset>
   </form>
   <dl>
