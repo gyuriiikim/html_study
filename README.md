@@ -140,6 +140,15 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
   </dl>
   <hr>
   <h2>23.02.21 - HTML - form</h2>
+  <form action="#" method="get">
+  <fieldset>
+  <legend>form 퀴즈</legend>
+  <span>다음 중 label for와 연관된 ionput 속성은?</span><br>
+  <label><input type="radio" name="quiz" value="id">1. id</label>
+  <label><input type="radio" name="quiz" value="class">2. class</label>
+  <label><input type="radio" name="quiz" value="name">2. name</label>
+  </fieldset>
+  </form>
   <dl>
   <dt>form</dt>
   <dd>입력, 선택 등의 정보 제출 컨트롤 요소를 묶는 틀로써 사용합니다. -> 블록이다</dd>
