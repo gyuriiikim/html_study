@@ -183,5 +183,6 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
     <dt>*목록 select, option*</dt>
     <dd>select는 목록(option)을 묶어주는 부모 대상입니다.</dd>
     <dd>option은 select의 자식으로 목록을 의미합니다.</dd>
-  
+    <dd>위 선택양식과 속성 의미가 동일합니다. ex) name, value 등</dd>
+  <dt></dt>
   </dl>
