@@ -186,3 +186,7 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
     <dd>위 선택양식과 속성 의미가 동일합니다. ex) name, value 등</dd>
   <dt></dt>
   </dl>
+  <hr>
+  <h2>23.02.20 - HTML - </h2>
+  
+  
