@@ -190,11 +190,11 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
   <h2>23.02.22 - HTML - </h2>
   <hr>
   <h2>23.02.23 - css </h2>
-  <dt>CSS</dt>
+  <dt><strong>CSS</strong></dt>
   <dd>css는 속성 값을 작성 할때마다 ;을 붙여줘야한다.</dd>
   <dd>css는 가족관계를 잘 이해하고 있어야한다.</dd>
   <dd>공백없이 '.'을 사용해야한다.</dd>
-  <dt><em>*꼭 외워야함*</em></dt>
+  <dt><em><strong>꼭 외워야함*</strong></em></dt>
   <dd>->block : 기본 w100%, 줄바꿈, 크기를 가질 수 있다.<br>->inlink : 내용크기만큼 너비 인식, 줄바꿈x, 크기x</dd>
   <dd>똑같은 선택자를 두번 쓸 필요는 없다</dd>
   <dt>외부스타일시트</dt>
