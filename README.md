@@ -201,5 +201,16 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
   <dd>main은 반드시 맨밑에 위치해야한다</dd>
   <dd>웹에서는 글자 크기를 em으로 많이 사용한다.</dd>
   <hr>
+  <h2>23.02.24 - css - 글자,크기여백</h2>
+  <dt>CSS</dt>
+  <dd>파비콘</dd>
+  <dd>파비콘은 웹사이트 창의 아이콘이다</dd><br>
+  <dt>FontAwesome</dt>
+  <dd>FontAwesome은 별도의 디자인프로그램 없이 HTMl, CSS 코드로 아이콘 생성한다.</dd>
+  <dd>box-sizing은 상황에 따라 값이 달라지지 않고 고정으로 된다.</dd>
+  <dt>margin / padding</dt>
+  <dd>margin:요소와 요소 사이를 떨어트릴때</dd>
+  <dd></dd>
+  
   
   
