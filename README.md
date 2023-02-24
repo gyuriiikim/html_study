@@ -203,7 +203,7 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
   <hr>
   <h2>23.02.24 - css - 글자,크기여백</h2>
   <dl>
-    <dt><strong>CSS</strong></dt><br>
+    <dt><strong>CSS</strong></dt>
     <br>
     <dd>디자인에서 글자는 rem으로 해주어야 적용이 된다.</dd>
     <dt>Pavicon</dt>
@@ -217,8 +217,8 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
     <dd>동그라미 모양을 만들어 주기 위해서는 완벽한 절반값을 border-redius에 적어줘야한다.</dd>
     <dd>또는 50%로 적어주면 완번한 동그라미 모양이 될 수 있으나 위아래 높이는 같아야 한다.</dd><br>
     <dd>이미지의 크기는 가로 세로 크기를 동시에 주면 완되고 한쪽만 적어주면 된다.</dd>
-    <a href="https://fontawesome.com/search?q=home&o=r&m=free">아이콘 링크</a>
-    <a href="https://cdnjs.com/">아이콘 연결링크</a>
+    <a href="https://fontawesome.com/search?q=home&o=r&m=free">아이콘 링크</a><br>
+    <a href="https://cdnjs.com/">아이콘 연결링크</a><br>
     <a href="https://webty.tistory.com/62">CSS : 크기/여백/테두리 속성</a>
   </dl>
   <hr>
