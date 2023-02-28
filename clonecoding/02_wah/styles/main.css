@@ -1,0 +1,33 @@
+main {
+    background-color: yellow;
+    width:850px;
+    margin:0 auto;
+}
+main .top {
+    height:100px;
+}
+main .top h1 {
+    float:left; font-size:1.25rem;
+    line-height:100px; margin-left:20px;
+}
+main .top dl {}
+main .top dl dd {
+    float:right; font-size:0.875rem;
+    line-height:100px; margin-right:20px;
+}
+main .top dl dd span {}
+main .top dl dd span::before {
+    display:inline; content:'\f015';
+}
+main .top dl dd em {}
+main .top dl dd em::before {
+    display:inline; content:'\f053';
+}
+main section {}
+main section h2 {
+    font-size:1.063rem;
+    color:mediumblue; font-weight:700px;
+    margin-top:100px;
+}
+main section p {}
+main section p em {color:chartreuse;}
