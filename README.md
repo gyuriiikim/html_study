@@ -243,11 +243,11 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
   <dl>
     <dt></dt>
     <dd></dd>
-    * -> 부모의 모든 자식을 말한다
-    margin:0 auto; -> block 가운데정렬
-    text-align:center; -> inline 가운데정렬
-    line-height:100px; -> 1줄일 경우만 가능, 수직가운데정렬
-    tag- class,+,~ - id의 순서로 작성해준다
-    float의 부모높이 0 처리 오류해결방법으로 display:inline-block도 가능하다.
-    고정값은 보통 header에만 들어간다.
+    <dd>* -> 부모의 모든 자식을 말한다</dd>
+    <dd>margin:0 auto; -> block 가운데정렬</dd>
+    <dd>text-align:center; -> inline 가운데정렬</dd>
+    <dd>line-height:100px; -> 1줄일 경우만 가능, 수직가운데정렬</dd>
+    <dd>tag- class,+,~ - id의 순서로 작성해준다</dd>
+    <dd>float의 부모높이 0 처리 오류해결방법으로 display:inline-block도 가능하다.</dd>
+    <dd>고정값은 보통 header에만 들어간다.</dd>
   </dl>
