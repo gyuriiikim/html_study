@@ -261,6 +261,7 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
     <dd>css할때 선택자를 오타 없는지 꼭 확인 해야한다.</dd>
     <dd>먼저 틀부터 잡고 background-color을 넣어줘야한다.</dd>'
     <dd>html을 처음부터 잘 해줘야 오류가 나지 않는다.</dd>
+    <dd>html에 form이 있을 때에는 id를 넣어줘서 이름을 사용해 css에 선택자를 적어주는것이 좋다.</dd>
   </dl>
   <hr>
   
