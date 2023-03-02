@@ -32,6 +32,11 @@ main .top dl dd em::before {
 main section {
     padding:100px 25px; overflow:hidden;
     display:inline-block;
+    /* 배경이미지 속성 */
+    background-image:url(../images/bg.png);
+    background-size:50%; /*w h*/
+    background-repeat:no-repeat; /*기본repear*/
+    background-position:right -10px; /*x y*/
 }
 main section h2 {
     font-size:1.063rem; margin-bottom:50px;
@@ -42,12 +47,14 @@ main section h2 span::before {
     margin:10px 10px; 
 }
 /* 웹접근성 내용---------------------------------------------- */
-main section h2 p {line-height:1.5;}
+main section p {
+    line-height:1.5; margin-bottom:50px;
+}
 main section p em {
     color:chartreuse; font-size:1.875rem;
 }
 main section h2+p {
     font-size:1.875rem; margin-bottom:50px;
 }
-main section h2+p+p {margin-bottom:50px;}
-main section h2+p+p+p {margin-bottom:50px;}
+/* main section h2+p+p {margin-bottom:50px;}
+main section h2+p+p+p {margin-bottom:50px;} */
