@@ -251,3 +251,16 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
     <dd>float의 부모높이 0 처리 오류해결방법으로 display:inline-block도 가능하다.</dd>
     <dd>고정값은 보통 header에만 들어간다.</dd>
   </dl>
+  <hr>
+  <h2>23.03.02 - CSS - imge </h2>
+  <dl>
+    <dt>CSS - img</dt>
+    <dd>배경이미지는 배경색상보다 우선순위로 높게 처리됩니다.</dd>
+    <dd>background-repeat:no-repeat; -> 반복안함</dd>
+    <dd>background-position:right -10px; /*x y*/</dd><br>
+    <dd>css할때 선택자를 오타 없는지 꼭 확인 해야한다.</dd>
+    <dd>먼저 틀부터 잡고 background-color을 넣어줘야한다.</dd>'
+    <dd>html을 처음부터 잘 해줘야 오류가 나지 않는다.</dd>
+  </dl>
+  <hr>
+  
