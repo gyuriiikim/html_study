@@ -1,0 +1,58 @@
+.notice {
+    width:495px; background-color:aqua;
+    border:1px solid #ccc; border-radius:10px;
+    padding:25px 20px 40px 25px;
+    position:relative;
+}
+.notice h2 {
+    font-size:1.2rem; letter-spacing:-0.02em; font-weight:700;
+    margin-bottom:30px;
+}
+.notice .more {
+    position:absolute; right:20px; top:25px;
+}
+.notice ul {
+    background-color:yellow;
+    margin-left:100px;
+}
+.notice ul li {
+    padding:7px 0; position:relative;
+}
+/* overflow로 인한 잘림현상 오류해결법 (밑에)
+    -> li에 적어줬던 overflow를 지워주면 before의 position을 바꿔주고
+        부모인 li에 position을 해주고 다시 absolute의 설정값을 바꿔준다.
+    */
+.notice ul li::after {
+    clear:both; content:''; display:inline-block;
+}
+.notice ul li::before {
+    width:4px; height:4px; background-color:#888;
+    content:''; display:inline-block; border-radius:4px;
+    position:absolute; left:-5px; top:13px; 
+}
+.notice ul li a {
+    float:left;
+    /* background-color:coral; */
+    width:50%;
+    white-space:nowrap; /*한줄처리*/
+    overflow:hidden; /*정해진 크기 안에서만 보이기*/
+    text-overflow:ellipsis; /*외부처리를 말줄임...*/
+}
+.notice ul li span {float:right;}
+footer {
+    /* background-color:antiquewhite; */
+    padding:30px;
+}
+footer a {margin-right:10px;}
+footer a:nth-child(3) {color:blue;}
+footer a::after {
+    /* content:'|'; display:inline;
+    padding-left:10px; */
+    /* 위 방법 단점:글자크기보다 작거나 크게 할 수 없다.
+    (디자인다양성부족) */
+    width:1px; height:15px; background-color:red;
+    content:''; display:inline-block; 
+    position:relative; right:-7px; top:2px
+}
+/* footer a:last-child::after {content:'';} 또는*/
+footer a:last-child::after {display:none;} /*복잡한 값을 사용할때에는 display로 하는게 맞다*/
