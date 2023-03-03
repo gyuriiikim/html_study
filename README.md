@@ -272,3 +272,19 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
     <li>선택자[속성$=값] 속성의 값이 이것으로 끝날</li>
     <li>선택자[속성*=값] 속성의 값에 이것이 포함</li>
   </ul>
+  <dl>
+    <dt>position</dt>
+    <dd>모든 position 관련 속성은 relative, absolute, fixed, sticky중 1개를 필수로 작성하여 위치 기준을 설정 -> 그 다음 left, right, top, bottom 속성을 사용하여 원하는 위치로 대상을 이동</dd>
+    <dt>position:absolute(필수) / left , right , top , bottom(보조)</dt>
+    <dd>부모 위치를 기준으로 상대적으로 위치를 움직임.</dd>
+    <dd>부모 기준은 가장 가까운 부모 기준 position 값을 인식합니다.(모든 position 가능)</dd>
+    <dt>3. position:fixed(필수) / left , right , top , bottom(보조)</dt>
+    <dd>페이지 스크롤길이와 관계없이 웹브라우저 위치에 고정</dd>
+    <dd>팝업 요소에 주로 사용 / body를 기준으로 위치가 정해집니다.</dd><br>
+    <dt>말 줄임표(3개는 필수적으로 적어줘야한다)</dt>
+    <dd>white-space:nowrap; -> 한줄처리</dd>
+    <dd>overflow:hidden; -> 정해진 크기 안에서만 보이기</dd>
+    <dd>text-overflow:ellipsis; -> 외부처리를 말줄임...</dd>
+    <dd>넓이 값을 정해줘야한다.</dd>
+  </dl>
+  <hr>
