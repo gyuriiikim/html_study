@@ -306,17 +306,35 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
   <dd> position 속성이 들어간 대상에 사용할 수 있습니다</dd>
   <dt>flex</dt>
   <dd>높이를 지정해줘야 줄바꿈에 변화가 생긴다</dd>
+  <dd>항상 container(부모)와 item(자식)으로 구분해서 이용.</dd>
   <dd></dd>
-  <dd></dd>
+  <dt>flex-direction</dt>
+  <dd>container에 적용하는 속성으로 container안의 item의 메인축 방향을 설정</dd>
+  <dt>flex-wrap</dt>
+  <dd>container에 적용하는 속성으로 container 내부 items 줄바꿈처리를 설정</dd>
+  <dt>flex-flow</dt>
+  <dd>container에 적용하는 속성으로 flex-direction과 flex-wrap을 묶음으로 처리<br>둘다 묶음처리를 사용하는 것이 좋다</dd>
+  <dt>justify-content </dt>
+  <dd>container에 적용하는 속성으로 메인축의 정렬방법을 설정</dd>
+  <dt>align-content </dt>
+  <dd>container에 적용하는 속성으로 교차축의 아이템이 2줄 이상일 경우 정렬방법</dd>
+  <dt>align-items</dt>
+  <dd>container에 적용하는 속성으로 교차축의 아이템이 1줄 일 경우 정렬</dd>
+  <dt>align-self</dt>
+  <dd>item에 적용하는 속성으로 container에 적용하는 align-items보다 우선순위가 높음</dd>
+  <dt>order</dt>
+  <dd>item에 적용하는 속성으로 아이템의 정렬 순서 설정</dd><br>
+  <dd>영상과 이미지가 교차되는 경우에는 꼭 형제 태그로 해줘야 한다.</dd>
 <hr>
 <h2>23.03.07 - CSS - kakao </h2>
 <dt>:hover</dt>
 <dd>태그명 옆에 적어주는 태그로 마우스를 올렸을때 글자색이 변하는 태그명이다</dd>
+<dt>background:rgba(0,0,0,0,0.6)</dt>
+<dd>배경색을 반투명하게 해주는 기능</dd>
 <dt></dt>
 <dd></dd>
 <dt></dt>
 <dd></dd>
 <dt></dt>
 <dd></dd>
-<dt></dt>
-<dd></dd>
+<hr>
