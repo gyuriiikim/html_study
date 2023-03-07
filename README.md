@@ -296,5 +296,27 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
       선택자에 수정을 해줘야한다.</li>
   </ul>
 <hr>
-<h2>23.03.06 - CSS - 복습 </h2>
+<h2>23.03.06 - CSS - position </h2>
+  <dt>position</dt>
+  <dd>뷰포트(viewport) 기준 설정한 위치 값에 따라 끈적하게 붙은 모습을 유지</dd>
+  <dd> left, right, top, bottom 방향에 따라 뷰포트의 x축과 y축으로 위치를 인식</dd>
+  <dd>header의 nav요소를 상단에 붙일 경우 주로 사용</dd>
+  <dt>position:z-index</dt>
+  <dd>-999 ~ 0 ~ +999 까지 순서를 정할 수 있습니다.(단위 작성안함)</dd>
+  <dd> position 속성이 들어간 대상에 사용할 수 있습니다</dd>
+  <dt>flex</dt>
+  <dd>높이를 지정해줘야 줄바꿈에 변화가 생긴다</dd>
+  <dd></dd>
+  <dd></dd>
 <hr>
+<h2>23.03.07 - CSS - kakao </h2>
+<dt>:hover</dt>
+<dd>태그명 옆에 적어주는 태그로 마우스를 올렸을때 글자색이 변하는 태그명이다</dd>
+<dt></dt>
+<dd></dd>
+<dt></dt>
+<dd></dd>
+<dt></dt>
+<dd></dd>
+<dt></dt>
+<dd></dd>
