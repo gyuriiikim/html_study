@@ -1,0 +1,110 @@
+/* header ------------------------------------------------------------------------------ */
+header {
+    background-color:aqua; 
+    width:1152px; margin:0 auto; 
+}
+header #h_top {
+    height:49px; 
+    flex-flow:row nowrap; display:flex;
+    justify-content:space-between; align-items:center;
+}
+header #h_top .h_t_left {
+    /* h1과 nav 부모대상 */
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between; align-items:center;
+} 
+header #h_top .h_t_left h1 {width:100px;}
+header #h_top .h_t_left h1 a {}
+header #h_top .h_t_left h1 img {width:100%;}
+header #h_top .h_t_left nav {margin-top:10px;}
+header #h_top .h_t_left nav a {margin-left:10px; font-weight:600;}
+header #h_top .h_t_left nav a:hover {color:#1e6cb3;}
+header #h_top .h_t_right {}
+header #h_top .h_t_right a {padding-right:5px; font-weight:600;}
+header #h_top .h_t_right a:hover {color:#1e6cb3;}
+header #h_top .h_t_right a,
+header #h_top .h_t_left nav a {font-size:0.875rem;}
+/* header-btm---------------------------------------------------------------- */
+header #h_btm {
+    height:119px;
+    flex-flow:row nowrap; display:flex;
+    align-items:center; justify-content:space-between;
+}
+header #h_btm h1 {}
+header #h_btm h1 a {}
+header #h_btm h1 a img {}
+header #h_btm #searchFrm {
+    background:#fff; 
+    border:3px solid #1e6cb3; width: 300px; padding:5px 0;
+}
+header #h_btm #searchFrm fieldset {}
+header #h_btm #searchFrm fieldset input[name$=search] {
+    width:90%; padding:3px; outline:none;
+    border:0;
+}
+header #h_btm #searchFrm fieldset input[name$=search]::placeholder {
+    color:#1e6cb3; padding:10px;
+}
+header #h_btm #searchFrm fieldset #search {position:relative; top:3px;}
+header #h_btm #searchFrm fieldset #search img {}
+/* header_btm_right------------------------------------------------------ */
+header #h_btm .right {
+    display:flex; flex-flow:column nowrap;
+    align-items:flex-end;
+}
+header #h_btm .right .r_top {margin-bottom:10px;}
+header #h_btm .right .r_top #lang {
+    border:2px solid #1e6cb3; 
+    padding:5px;
+}
+header #h_btm .right .r_top #lang option {}
+header #h_btm .right .r_top #go {
+    background:#1e6cb3; color:#fff;
+    width:36px; height:30px;
+}
+header #h_btm .r_btm {}
+header #h_btm .r_btm p {line-height:1;}
+header #h_btm .r_btm p:first-child {
+    font-size:1.875rem; font-weight:700;
+}
+/* main----------------------------------------------------------------------------------- */
+main {}
+main .bnr_wrap {
+    background-color: blueviolet;
+    width:1152px; margin:0 auto;
+    flex-flow:row nowrap; display:flex;
+    justify-content:space-between;
+}
+main .bnr_wrap .left {position:relative;}
+main .bnr_wrap .left .bnr {}
+main .bnr_wrap .left .bnr img {}
+main .bnr_wrap .left .close {
+    display:inline-block; background:#1e6cb3; color:#fff; padding: 10px;
+    position:absolute; right:10px; bottom:20px;
+}
+/* right-------------------------------- */
+main .bnr_wrap .right {width:360px;}
+main .bnr_wrap .right .corona {position:relative; display:block;}
+main .bnr_wrap .right .corona img {}
+main .bnr_wrap .right .corona span {
+    position:absolute; background:yellow;
+    display:inline-block; height:27px;
+}
+main .bnr_wrap .right .corona .date {width:159px; height:24px; right:21px; top:11px}
+main .bnr_wrap .right .corona .result {text-align:center;}
+main .bnr_wrap .right .corona .result1 {width:139px; left:31px; top:78px;}
+main .bnr_wrap .right .corona .result2 {width:139px; right:30px; top:78px;}
+main .bnr_wrap .right .corona .result3 {width:93px; left:31px; bottom:49px;}
+main .bnr_wrap .right .corona .result4 {width:93px; right:121px; bottom:49px;}
+main .bnr_wrap .right .corona .result5 {width:59px; right:32px; bottom:49px;}
+main .bnr_wrap .right .bnr {}
+main .bnr_wrap .right .bnr img {margin-top:10px;}
+/* -------------------------------------------------------------------------- */
+main .service_wrap {}
+main .service_wrap .title {}
+main .service_wrap .title h1 {}
+main .service_wrap .title h1 a {}
+main .service_wrap .contents {}
+main .service_wrap .contents a{}
+main .service_wrap .contents a span {}
+main .service_wrap .contents a span {}
