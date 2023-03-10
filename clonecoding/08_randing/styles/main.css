@@ -1,0 +1,15 @@
+/* -=-------------------------------------------------- */
+header {
+    background:url(../imeges/bg1.png);
+}
+header .h_wrap {}
+header .h_wrap .top {}
+header .h_wrap .top .logo {}
+header .h_wrap .top .logo img {}
+header .h_wrap .center {}
+header .h_wrap .center h1 {}
+header .h_wrap .center h1 .give {}
+header .h_wrap .center h1 .give span {}
+header .h_wrap .right_btm {}
+header .h_wrap .right_btm .more {}
+header .h_wrap .right_btm .more span{}
