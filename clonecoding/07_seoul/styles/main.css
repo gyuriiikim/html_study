@@ -1,4 +1,8 @@
 /* header ------------------------------------------------------------------------------ */
+#top {
+    position:fixed; right:50px; bottom:50px;
+    z-index:9999;
+}
 header {
     background-color:aqua; 
     width:1152px; margin:0 auto; 
@@ -287,15 +291,50 @@ footer {
     background:lightsteelblue;
     width:1152px; margin:0 auto;
 }
-footer .ft_btm {
-    background:lightcyan; display:flex;
+footer .f_container {}
+footer .f_container .ft_top {
+    background:lightblue; display:flex;
     flex-flow:row nowrap; justify-content:space-between;
+    border-top:2px solid #888; padding:20px 0 10px 0;
 }
-footer .ft_btm .left {}
-footer .ft_btm .left img {}
-footer .ft_btm .left address {}
-footer .ft_btm .left p {}
-footer .ft_btm .right {}
-footer .ft_btm .right a {}
-footer .ft_btm .right a img {}
+footer .f_container .ft_top .left {}
+footer .f_container .ft_top .left a {
+    font-size:0.91rem; color:#888;
+}
+footer .f_container .ft_top .left a:nth-child(2) {color:#000; font-weight:600;}
+footer .f_container .ft_top .left a::after {
+    content:''; display:inline-block;
+    width:1px; height:15px; background-color:#888;
+    position:relative; top:2px; margin:0 10px 0 10px;
+    align-content:center;
+}
+footer .f_container .ft_top .left a:last-child::after {
+    margin-right:0; display:none;
+}
+footer .f_container .ft_top .right {}
+footer .f_container .ft_top .right a {
+    width:25px; height:25px;
+    background:lightcoral url(../icon_sns2/css_sprites.png) no-repeat;
+    display:inline-block; text-indent:-9999px; background-position-y:0;
+}
+footer .f_container .ft_top .right a:hover {background:url(../icon_sns2/css_sprites2.png) no-repeat;}
+footer .f_container .ft_top .right a:nth-child(1) {background-position-x:-0px;}
+footer .f_container .ft_top .right a:nth-child(2) {background-position-x:-24px;}
+footer .f_container .ft_top .right a:nth-child(3) {background-position-x:-50px;}
+footer .f_container .ft_top .right a:nth-child(4) {background-position-x:-75px;}
+footer .f_container .ft_top .right a:nth-child(5) {background-position-x:-99px;}
+footer .f_container .ft_top .right a:nth-child(6) {background-position-x:-149px;}
+footer .f_container .ft_btm {
+    background:lime;
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+    border-top:2px solid #888; padding:20px 0;
+}
+footer .f_container .ft_btm .left {display:flex; flex-flow:row nowrap;}
+footer .f_container .ft_btm .left p {font-size:0.875rem; line-height:1.5;}
+footer .f_container .ft_btm .left p img {}
+footer .f_container .ft_btm .right 
+{background:lightyellow;}
+footer .f_container .ft_btm .right a {}
+footer .f_container .ft_btm .right a img{width:50;}
 
