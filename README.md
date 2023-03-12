@@ -347,6 +347,7 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
   <dt>스트라이트</dt>
   <dd>스프라이트 이미지를 만들기 위해서는 background이미지를 사용해야 한다.</dd>
   <dd>의미를 작성 하게되면 글자가 일자로 내려가서 이미지선택자에 text-indent의 (-9999px)높은 숫자로 s숨겨야 한다.</dd>
+  <dd>background</dd>
 </dl>
 <hr>
 <h2>23.03.09 - CSS - 서울특별시2 </h2>
