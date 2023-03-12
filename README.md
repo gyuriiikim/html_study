@@ -347,9 +347,25 @@ hr은 구분선 / em,strong은 강조문구 / br은 문장 줄바꿈 / q 짧은 
   <dt>스트라이트</dt>
   <dd>스프라이트 이미지를 만들기 위해서는 background이미지를 사용해야 한다.</dd>
   <dd>의미를 작성 하게되면 글자가 일자로 내려가서 이미지선택자에 text-indent의 (-9999px)높은 숫자로 s숨겨야 한다.</dd>
-  <dd>background</dd>
+  <dd>background로만 사용하는 선택자기능 경우 일자로 나열을 해줘서 작성해줘야한다.</dd>
 </dl>
 <hr>
 <h2>23.03.09 - CSS - 서울특별시2 </h2>
+  <dl>
+    <dt>이미지 모션 선택자</dt>
+    <dd>이미지가 마우스 커서를 올려놨을때 모션처럼 커지기 위해서는 hover span img를 적어줘야한다</dd>
+    <dd>위의 선택자 사용시 이미지가 전체특과 함께 커지기 때문에 그 부모에 overflow를 해줘야한다</dd>
+    <dd>그 이미지 선택자에 높이와 overflow를 해줘야한다</dd>
+    <dt>transition</dt>
+    <dd>애니메이션 효과 기능이고 all은 변화값을 재생한다는 의미와 0.3s는 몇초동안이라는 뜻이다<br>마우스 커서를 멀리할때에도 모션을 적용하려면 이미지 선택자에도 똑같이 transition을 적용 해줘야 한다</dd>
+</dl>
 <hr>
-<h2>23.03.010 - CSS - 서울특별시2 </h2>
+<h2>23.03.10 - CSS - 서울특별시2&북극곰 </h2>
+<bl>
+  <dt>링크연결</dt>
+  <dd>올라가기 버튼을 만들 경우에는 header이나 main 등 id로 이름을 만들어준 뒤 버튼 링크에 아이디#과 #header을 작성해주면 된다.</dd>
+  <dt>graident</dt>
+  <dd>linear-gradient(시작색상,끝색상) / radial-graident(시작색상,끝색상)</dd>
+  <dd>circle은 원모양의 그라데이션을 중심의 원이 완전환 동그라미모양을 위해 사용한다.
+      ex) rgba(0,0,0,0.5) / transparent를 작서왜주면 추명색으로 적용된다.</dd>
+</bl>
