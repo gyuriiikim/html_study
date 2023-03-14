@@ -1,0 +1,111 @@
+/* 생돈의 벼랑bg----------------------------------------------- */
+#visual_bg {
+    background:url(../imeges/bg1.png) center;
+    background-size:cover;
+    background-attachment:fixed;
+}
+#visual_bg #visual_bg_gra {
+    background: linear-gradient(0deg, rgba(0,0,0,1.5), transparent 40%);
+}
+#visual_bg #visual_bg_gra .container {
+    width:1220px; margin:0 auto; text-align:center;
+    padding:300px 0;
+    position:relative ;
+}
+#visual_bg #visual_bg_gra .container .logo {
+    width:50px; position:absolute; left:0; top:0;
+}
+#visual_bg #visual_bg_gra .container .logo a {
+    
+}
+#visual_bg #visual_bg_gra .container .logo a img {width:100%;}
+#visual_bg #visual_bg_gra .container .title {margin-bottom:50px;}
+#visual_bg #visual_bg_gra .container .title,
+#visual_bg #visual_bg_gra .container .title em {
+    font-size:4rem; letter-spacing:-0.02em;
+    color:#fff; line-height:1.2;
+}
+#visual_bg #visual_bg_gra .container .title em {font-weight:700;}
+#visual_bg #visual_bg_gra .container .sponsor {}
+#visual_bg #visual_bg_gra .container .sponsor img {}
+#visual_bg #visual_bg_gra .container .question {}
+#visual_bg #visual_bg_gra .container .question img {
+    position:absolute; right:0; bottom:200px;
+}
+/* 퀴즈 bg -------------------------------------------------------------------------- */
+#quiz_bg {
+    background:url(../imeges/quiz_bg.png);
+}
+#quiz_bg .conatiner {
+    width:1220px; margin:0 auto;
+    padding:100px 0; color:#fff;
+    display:flex; background:green;
+}
+#quiz_bg .conatiner .left {
+    background:lightcoral; width:50%;
+}
+#quiz_bg .conatiner .left #quizFrm {}
+#quiz_bg .conatiner .left #quizFrm fieldset {}
+#quiz_bg .conatiner .left #quizFrm fieldset h1 {
+    font-size:3rem; text-align:center;
+    font-weight:700; line-height:1.5;
+}
+#quiz_bg .conatiner .left #quizFrm fieldset h2 {line-height:2; font-size:1.063rem;}
+#quiz_bg .conatiner .left #quizFrm fieldset ul {}
+#quiz_bg .conatiner .left #quizFrm fieldset ul li {line-height:2.2;}
+#quiz_bg .conatiner .left #quizFrm fieldset ul li input[name=quiz] {}
+#quiz_bg .conatiner .left #quizFrm fieldset ul li label {}
+#quiz_bg .conatiner .left #quizFrm fieldset p {}
+#quiz_bg .conatiner .left #quizFrm fieldset p .quiz_answer {
+    color:#fff; padding:10px 0; width:100%; background:#888;
+    border-radius:50px;
+}
+#quiz_bg .conatiner .right {
+    width:50%;
+}
+#quiz_bg .conatiner .right p {text-align:center;line-height:2;}
+#quiz_bg .conatiner .right p img{}
+/* -----------------------------------------campaign 통합 */
+.campaign_bg {}
+.campaign_bg .container {
+    width:1220px; margin:0 auto;
+    display:flex; padding:100px 0;
+}
+.campaign_bg .container h1,
+.campaign_bg .container h1 > * {
+    font-size:3rem; line-height:1.4;
+    letter-spacing:-0.02em;
+}
+/* campaign1~7 배경모음-------------------------------------------------- */
+.campaign1 {background:url(../imeges/video_bg.png);}
+.campaign2 {background:url(../imeges/50_bg.png);}
+.campaign3 {background:#eee;}
+.campaign4 {background:url(../imeges/50_bg.png);}
+.campaign5 {background:url(../imeges/wwf.jpg);}
+.campaign6 {background:url(../imeges/50_bg.png);}
+.campaign7 {background:url(../imeges/bg2.png);}
+.campaign_bg {background-size:cover; background-position:center;} 
+/* campaign1 ------------------------------------------------------------ */
+.campaign1 .container {
+    padding:100px 0; display:flex;
+    flex-flow:column nowrap; align-items:center;
+}
+.campaign1 .container h2 {
+    background:lightgray; text-align:center;
+    font-size:3rem; font-weight:700; padding-bottom:30px;
+    line-height:1.2;
+} 
+.campaign1 .container iframe {margin:30px 0;} 
+.campaign1 .container .sponsor {} 
+.campaign1 .container .sponsor img {} 
+/* campaign2 ------------------------------------------ */
+.campaign2 .container {
+    flex-flow:column nowrap; color:#fff;
+}
+.campaign2 .container h1 {}
+.campaign2 .container h1 em {
+    background:#fff; color:#000;
+    font-weight:700;
+}
+.campaign2 .container h1 p {}
+.campaign2 .container h1 p img {width:100%;}
