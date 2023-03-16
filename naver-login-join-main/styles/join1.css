@@ -1,0 +1,107 @@
+/* ---------------------------------------------------- 통합 */
+body {background:#f5f6f7;}
+.lang_slt, main {margin:0 auto;}
+/* ---------------------------------------------------- 언어 */
+.lang_slt {width:768px; text-align:right;}
+.lang_slt #lang {
+    border:1px solid #000;
+    padding:5px 10px;
+}
+.lang_slt #lang option {}
+/* ----------------------------------------------------- main */
+.main {width:460px;}
+.main h1 {
+    /*background-color:aqua;*/
+    display:flex; flex-flow:column nowrap;
+    justify-content:space-between;
+    align-items:center; margin:50px 0;
+}
+.main h1 a {}
+.main h1 a img {}
+/* ----------------------------------------------------------------- 이용약관 */
+.main #joinFrm {/*background-color:lightblue;*/}
+.main #joinFrm fieldset {}
+.main #joinFrm fieldset ul {}
+.main #joinFrm fieldset ul li {padding:19px 0;}
+.main #joinFrm fieldset ul li #box1 {}
+.main #joinFrm fieldset ul li #box2 {}
+.main #joinFrm fieldset ul li #box3 {}
+.main #joinFrm fieldset ul li #box4 {}
+.main #joinFrm fieldset ul li:nth-of-type(3) > h2 {position:relative;}
+.main #joinFrm fieldset ul li:nth-of-type(3) a {
+    border:1px solid #000; position:absolute;
+    padding:5px; color:#000; background-color:#fff;
+    font-size:0.875rem; right:0;
+}
+.main #joinFrm fieldset ul li input {}
+.main #joinFrm fieldset ul li label {
+    /*background-color:lightcoral;*/
+    font-size:1rem; line-height:1.5; letter-spacing:-0.02em;
+    font-weight:600;
+}
+.main #joinFrm fieldset ul li .txt_box {
+    height:100px; background-color:#fff;
+    border:1px solid #ccc;
+    overflow:auto; margin-top:20px;
+}
+.main #joinFrm fieldset ul li .txt_box h2 {
+    line-height:1.5; letter-spacing:-0.02em;
+    padding:10px 0;
+}
+.main #joinFrm fieldset ul li .txt_box p {
+    font-size:0.85rem; line-height:1.5; letter-spacing:-0.02em;
+    padding-bottom:30px;
+}
+.main #joinFrm fieldset ul li label em {color:#ccc;}
+.main #joinFrm fieldset ul li:first-child label {
+    text-decoration:underline;
+}
+/* ---------------------------------------------------------------- 버튼 */
+.main #joinFrm fieldset .submit {
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+}
+.main #joinFrm fieldset .submit > * {
+    width:50%;
+    padding:20px 0; margin:10px 0;
+}
+.main #joinFrm fieldset .submit #reset {
+    background-color:#ccc; color:#fff;
+}
+.main #joinFrm fieldset .submit a {
+    background-color:#8e8e8e; color:#fff;
+    text-align:center;
+}
+/* ------------------------------------------------------------- 단체회원가입 */
+.main .group_join {
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between; margin:15px 70px 60px;
+}
+.main .group_join p {
+    font-size:0.75rem; line-height:1.5; letter-spacing:-0.02em;
+}
+.main .group_join a {
+    font-size:0.75rem; line-height:1.5; letter-spacing:-0.02em;
+    text-decoration:underline;
+}
+/* ------------------------------------------------------------- footer */
+.main .footer {
+    /*background-color:lightgoldenrodyellow;*/
+    text-align:center;
+}
+.main .footer .top {}
+.main .footer .top a {
+    font-size:0.75rem; line-height:1.5;
+    letter-spacing:-0.02em;
+}
+.main .footer .top a::after::after {
+    content:''; width:1px; height:1.5em;
+    background-color:#000;
+    display:inline-block; margin:0 10px;
+}
+.main .footer .top a:last-child::after {display:none;}
+.main .footer .copy {
+    margin-top:5px; font-size:0.75rem;
+    line-height:1.5; letter-spacing:-0.02em;
+}

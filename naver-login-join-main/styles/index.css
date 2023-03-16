@@ -1,0 +1,39 @@
+.login {
+    background-color: yellow;
+    margin:100px auto; width:1208px; 
+    border:1px solid #eee;
+}
+.login .box {
+    width:350px; height: 135px;
+    margin:0 auto;
+    border:1px solid #eee;
+    background-color: beige;
+    padding:15px;
+}
+.login .box p {
+    font-size:0.750rem;
+}
+.login .box .bt {
+    background-color: #03c75a; 
+    text-align:center;
+    padding:15px 50px;
+    margin:15px 0;
+}
+.login .box .bt .bt_t {
+    color:#fff;
+    font-weight:700; font-size:1.125rem;
+    letter-spacing:-0.03em;
+}
+.login .box .btm {
+    display:flex; flex-flow:row nowrap;
+    justify-content: space-between;
+}
+.login .box .btm .left .id,
+.login .box .btm .left .pw,
+.login .box .btm .right .join {
+    font-size:0.750rem;
+}
+.login .box .btm .left {}
+.login .box .btm .left a {}
+.login .box .btm .right {}
+.login .box .btm .right a {}
