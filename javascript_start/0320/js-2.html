@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-2</title>
+    <script>
+        // var 1num=10; X 숫자는 앞에있으면안됨
+        // var $num=10; O
+        // var 100num=10; X 
+        // var num100=10; O
+        // var document=10; O -> X 키워드를 변수이름으로 사용해서는 안된다
+        // var num=10; O
+        // var str="hello"; X-> O
+        //var num=10; document.write(Num); X 변수이름이 대문자와 소문자를 다르게해서는 안된다
+        //var num=10; document.write(num); O
+        
+        var box1 = 1
+        var box1 = 2
+        console.log(box1) // 오류를 알 수 없다
+
+        let box2 = 3
+        box2 = 4
+        console.log(box2) // 오류를 알 수 있다
+
+        const box3 = 6
+        console.log(box3)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

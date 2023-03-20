@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-1</title>
+    <script>
+        // 내부 스크립트
+        // 변수의 선언과 대입
+        // var 그릇 //빈 저장소
+        // var 그릇 = 쌀밥 // 데이터 대입
+        // var 그릇 = 콩밥 // 데이터 변경
+        // var box1 = 10 //대입만 해놓은 것 ';'<- 상관없음
+        // window.alert(box1) //출력(위도우에 팝업창을 하겠다는 의미)
+        // 객체.속성
+        // 객체.매소드()
+
+        var box1 //변수생성 / 선언은 한번만
+        var box2 = 1 //생성과 대입을 동시에 함
+        console.log(box1) //undefined
+        box1 = 10
+        box2 = box1 //우측의 값을 좌측에 대입한다는 뜻 
+        console.log(box1) // 10
+        box1 = 20
+        console.log(box1) // 20
+        console.log (box1, box2)
+
+        console.log(typeof box1) //이 데이터 값은 지금 무엇인지를 알려준다(number)
+        console.log(typeof box2)
+
+        var box3 = 'A' //문자는 ''로 묶어줘야 인식한다
+        console.log(typeof box3) // 이 데이터 값은 지금 문자(string)라는 것을 달려준다
+        console.log(typeof box1+1) //오른쪽에서 왼쪽으로 읽어야한다. box1+1의값의 이름을 출력해라 (20+1)
+        console.log(typeof box3+1) //('A'+1)
+
+        var box4 = '아이디를 입력하세요'
+        console.log(box4.length)
+
+        var a = 1
+        var b = a
+        var c = a + b + c // 오른쪽부터 읽어야 하기 때문에 정의되지 않은 C의 결과는 nan으로 나온다
+                            //nan의 뜻은 Not-a-Number라고 한다
+        console.log(a, b, c)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
