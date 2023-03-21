@@ -1,0 +1,19 @@
+.container {
+    background:lightblue;
+    display:grid; 
+    grid-template-columns:repeat(4,1fr);
+    /* grid-template-rows:repeat(2,400px); */
+    margin:0 auto; max-width:1200px;
+}
+.container a {
+    padding:0 0 50px;
+    background:pink;
+}
+.container a p {}
+.container a p img {width:100%;}
+@media screen and (max-width:768px) {
+    .container {
+        width:calc(100% - 30px);
+        grid-template-columns:repeat(2,1fr);
+    }
+}
