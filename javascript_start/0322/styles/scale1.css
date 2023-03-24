@@ -1,0 +1,41 @@
+body {
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px 0;
+  background-color: lightblue;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 50px 0;
+  background: lightcoral;
+  width: 100%;
+}
+
+p {
+  font-size: 1.875rem;
+}
+
+p, ul {
+  background-color: #fff;
+  width: 100%;
+  padding: 50px 0;
+}
+
+ul {
+  border: 1px solid #eee;
+  width: 500px;
+  border-radius: 30px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+}
+
+ul li {
+  line-height: 2;
+  font-weight: 700;
+}/*# sourceMappingURL=scale1.css.map */

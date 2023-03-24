@@ -1,0 +1,40 @@
+@mixin layout {
+    margin:0 auto; 
+}
+$text-aline:center;
+$font-weight:700;
+$padding50:50px 0;
+$bg_fff:#fff;
+body {
+    @include layout; text-align:$text-aline;
+    padding:100px 0; background-color:lightblue;
+    display:flex; flex-flow:column nowrap;
+    align-items:center;
+}
+
+h1 {
+    font-size:3rem; font-weight:$font-weight;
+    padding:$padding50; background:lightcoral;
+    width:100%;
+}
+p {
+    font-size:1.875rem;
+}
+p, ul {
+    background-color:$bg_fff; width:100%;
+    padding:$padding50;
+}
+ul {
+    border:1px solid #eee;
+    width:500px; border-radius:30px;
+    display:flex; flex-flow:column nowrap;
+    justify-content:start;
+}
+ul li {
+    line-height:2;
+    font-weight:$font-weight;
+}
+ul li .height {}
+ul li .weight {}
+ul li .normal {}
+ul li .weight2 {}
