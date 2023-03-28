@@ -1,0 +1,46 @@
+/* -----------------------------------------------main */
+/* 사진 200px sns25 */
+body {
+    background:url(../images/7598163.jpg) center;
+    background-size:cover; background-attachment:fixed;
+}
+main {
+    margin:0 auto; text-align:center;
+    height:100vh; padding:300px 0;
+    display:flex; flex-flow:column nowrap;
+    align-items:center;
+}
+main .photo {
+    width:200px; height:200px; margin:0 auto;
+    overflow:hidden; border-radius:50%;
+    border:5px solid #fff; 
+}
+main .photo img {width:100%;}
+main h1 {}
+main .loading {}
+main .loading .bar {
+    content:''; display:block;
+    width:200px; height:5px;
+    border-bottom:10px solid #fff;
+    border-radius:10px;
+}
+main p {
+    font-size:0.813rem;
+    font-weight:700;
+}
+main .sns {
+    width:150px; display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+}
+main .sns a {width:25px;}
+main .sns a img {width:100%;}
+main .sns a .tip {}
+main .gnb {}
+main .gnb span {
+    text-align:center;
+    content:''; display:block;
+    width:40px; height:2px;
+    border-bottom:10px solid #fff;
+    border-radius:10px;
+}
