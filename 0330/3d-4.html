@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D-4</title>
+    <link rel="stylesheet" href="./styles/reset.css" type="text/css">
+    <style>
+        /* #f68a16 */
+        body {
+            text-align:center;
+            background:#f68a16;}
+        #perspective {
+            display:inline-flex; margin-top:200px;
+        }
+        #perspective .box {
+            background:url(./images/burger1.jpg) center -140px;
+            background-size:140%;
+            border:7px solid #fff;
+            box-shadow:0 5px 5px rgba(0,0,0,0.5);
+            width:250px; height:250px; margin:50px;
+        }
+        #perspective .box:first-child {
+            animation:boxY 1s ease forwards, re 2s ease forwards 0.5s,
+                    re 1s ease alternate-reverse forwards 1.5s;
+        }
+        #perspective .box:last-child {
+            animation:boxY 1s ease forwards,
+                    boxX 2s ease forwards 0.5s,
+                    boxX 1s ease alternate-reverse forwards 1.5s;
+        }
+        #perspective .box img {width:100%;}
+        @keyframes boxY {
+            0% {transform:translateY(-200px) scale(1); }
+            100% {transform:translateY(0) scale(1.2);}
+        }
+        @keyframes boxX {
+            0% {transform:translateX(0) scale(1.2);}
+            100% {transform:translateX(1000px) scale(1);}
+        }
+        @keyframes re {
+            0% {transform:translateX(0) scale(1.2);}
+            100% {transform:translateX(-1000px) scale(1);}
+        }
+    </style>
+</head>
+<body>
+    <div id="perspective">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

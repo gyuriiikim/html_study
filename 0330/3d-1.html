@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D-1</title>
+    <link rel="stylesheet" href="./styles/reset.css" type="text/css">
+    <style>
+        body {text-align:center; overflow:hidden;}
+        #go {
+            position:fixed; left:25px; top:25px;
+            border-radius:10px;
+            padding:20px; background:#222; color:#fff;
+        }
+        #perspective {
+            /*background:#eee;*/ display:inline-flex;
+            padding:30px; margin-top:200px;
+            transform-style:preserve-3d; /*부모 내의 자식을 3차원 대상 인식*/
+            perspective:100px;/* 사람과 화면 상의 거리 */
+        }
+        #perspective .box {
+            background:hotpink; width:200px; height:200px;
+            margin:100px;
+            animation:ts3d 10s ease infinite alternate;
+        }
+        #go:hover ~ #perspective .box{
+            /* transform:rotateX(45deg) skew(80deg); */
+        }
+        @keyframes ts3d {
+            0% {transform:translateX(0) rotateX(0) skew(0)}
+            50% {transform:translateX(100px) rotateX(10deg) skew(50deg)}
+            100% {transform:translateX(500px) rotateX(-50deg) skew(100deg)}
+        }
+    </style>
+</head>
+<body>
+    <button id="go" type="button">Go</button>
+    <div id="perspective">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
