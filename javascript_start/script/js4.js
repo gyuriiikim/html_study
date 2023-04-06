@@ -9,12 +9,18 @@ let num = 0 //변경 수략 변수(초기값 0)
 let total = 0 //변경 최종가격 변수(초기값 0)
 console.log(price,num,total)
 
+
 // 함수
+// 조건문추가 (10개까지만 구입되게 해라)
 function order_add(){
-    num++
+    if(num <10){
+        num++
     total = price*num
     number.innerHTML = num
     result.innerHTML = total.toLocaleString('ko-kr')
+    }else{
+        window.alert('최대구매수량입니다.')
+    }
 }
 function reset_btn(){
     num =0
