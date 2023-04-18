@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interior-1</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <style>
+        body,html {scroll-behavior:smooth;}
+        * {box-sizing:border-box; margin:0; padding:0;}
+        a {text-decoration: none;}
+        main section {height:100vh; background-size:cover; background-position:center;}
+        main .s1 {background-image:url(./images/bg1.jpg);}
+        main .s2 {background-image:url(./images/bg2.jpg);}
+        main .s3 {background-image:url(./images/bg3.jpg);}
+        main .s4 {background-image:url(./images/bg4.jpg);}
+        header {
+            position:fixed; width:100%; left:0; top:0;
+        }
+        header h1 {
+            background:rgba(255,255,255,0.6); text-align:center;
+            font-size:3rem; font-weight:700; line-height:120px;
+        }
+        .h_scroll {display:none;}
+        header .link {
+
+            background:#fff; padding:40px 0; text-align:center;
+        }
+        header .link a {
+            display:inline-block; line-height:50px;
+            font-size:1.5rem; margin-right:100px;
+        }
+        header .link a:last-child {margin:0;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Interior view</h1>
+        <div class="link">
+            <a href="#" class="a">A</a>
+            <a href="#" class="b">B</a>
+            <a href="#" class="c">C</a>
+            <a href="#" class="d">D</a>
+        </div>
+    </header>
+    <main>
+        <section class="s1"></section>
+        <section class="s2"></section>
+        <section class="s3"></section>
+        <section class="s4"></section>
+    </main>
+    <script>
+        
+        // 1. 특정위치까지 스크롤내릴 시 header 이동(nav유지)
+        // 2. nav-a 클릭 시 각 section 영역 이동
+        const link = document.querySelectorAll('.link  a')
+        const section = document.querySelectorAll('section')
+        const header = document.querySelector('header')
+        console.log(link,section,header)
+
+
+        header.style.transition = 'all 0.5s'
+
+        window.addEventListener('scroll',()=>{
+            if(window.pageYOffset >= section[1].offsetTop-200){
+                header.style.transform = 'translateY(-120px)'
+            }else {
+                header.style.transform = 'translateY(0)'
+            }
+        })
+
+        link.forEach((obj,i)=>{
+            obj.addEventListener('click',(e)=>{
+                // e.preventDefault() //위도우 초기화 제거
+                window.scroll(0, section[i].offsetTop)
+            })
+        })
+    </script>
+</body>
+</html>

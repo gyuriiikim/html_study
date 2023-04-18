@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interior-1</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <style>
+        header {
+            position:fixed; width:20%; left:50px; top:50px;
+        }
+        header h1 {
+            font-size:2rem; font-weight:700;
+        }
+        header nav {
+            padding:20px 0; margin-left:10px;
+        }
+        header nav a {
+            display:inline-block;
+            font-size:1.3rem; padding-right:30px;
+        }
+        header nav a:hover {
+            border-bottom:3px solid #000;
+        }
+        .bar {
+            display:flex; flex-flow:column nowrap;
+            justify-content:space-between; position:fixed;
+            top:50%; left:50px;
+            /* background:lightblue; */
+        }
+        .bar .bar_active {
+            width:100px; height:4px; display:block;
+            background:#fff;
+        }
+        .bar a {
+            width:30px; height:4px; display:block;
+            background:#000; margin-bottom:10px;
+        }
+        .bar a:last-child {margin:0;}
+        header nav a:last-child {margin:0;}
+        body,html {scroll-behavior:smooth;}
+        * {box-sizing:border-box; margin:0; padding:0;}
+        a {text-decoration: none;}
+        main section {height:100vh; background-size:cover; background-position:center;}
+        main .s1 {background-image:url(./images/bg1.jpg);}
+        main .s2 {background-image:url(./images/bg2.jpg);}
+        main .s3 {background-image:url(./images/bg3.jpg);}
+        main .s4 {background-image:url(./images/bg4.jpg);}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Interior view</h1>
+        <nav>
+            <a href="#" class="a">A</a>
+            <a href="#" class="b">B</a>
+            <a href="#" class="c">C</a>
+            <a href="#" class="d">D</a>
+        </nav>
+    </header>
+    <div class="bar">
+        <a href="#" class="bar_active"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+    </div>
+    <main>
+        <section class="s1"></section>
+        <section class="s2"></section>
+        <section class="s3"></section>
+        <section class="s4"></section>
+    </main>
+    <script>
+        const bar = document.querySelectorAll('.bar > a')
+        const section = document.querySelectorAll('section')
+        const nav = document.querySelectorAll('nav > a')
+        console.log(bar,section,nav)
+
+        bar_reset(0) //함수 초기값 선언
+        window.addEventListener('scroll',(e)=>{
+            e.preventDefault()
+            if(window.pageYOffset >= section[0].offsetTop){bar_reset(0)}
+            if(window.pageYOffset >= section[1].offsetTop-200){bar_reset(1)}
+            if(window.pageYOffset >= section[2].offsetTop-200){bar_reset(2)}
+            if(window.pageYOffset >= section[3].offsetTop-200){bar_reset(3)}
+        })
+
+        for(let i of bar){i.style.transition = 'all 0.5s'}
+        function bar_reset(num){
+            for(let i of bar){i.classList.remove('bar_active')}
+            bar[num].classList.add('bar_active')
+        }
+
+        nav.forEach((obj,i)=>{
+            obj.addEventListener('click',(e)=>{
+                e.preventDefault() //위도우 초기화 제거
+                window.scroll(0, section[i].offsetTop)
+            })
+        })
+    </script>
+</body>
+</html>
