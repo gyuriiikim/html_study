@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video-3</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <style>
+        * {box-sizing:border-box;}
+        body {height:500vh; overflow-x:hidden;}
+        .container {}
+        .container img {
+            width:100%;
+            position:fixed; left:0; top:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./images/video/1.jpg" alt="">
+    </div>
+    <script>
+
+        const imgElem = document.querySelector('.container img')
+        let totalImageCount = 282
+        let videoImages = []
+        setImages()
+        init()
+        function setImages(){ //1~282 이미지 생성 함수
+            for(let i=1; i<=totalImageCount; i++){ //i가 1부터 i가 282보다 작거나 같을때까지 증가
+                let imgE = document.createElement('img')
+                console.log(imgE)
+                imgE.src = `./images/video/${i}.jpg`
+                console.log(imgE)
+                videoImages.push(imgE) //현재 배열값에서 뒤쪽에 새로운 값 추가
+            }
+        }
+
+        function init(){ //스크롤 동작 함수
+            window.addEventListener('scroll',()=>{
+                let progress = pageYOffset / (document.body.offsetHeight - window.innerHeight)
+                let currentFrame = Math.round((totalImageCount-1) * progress)
+                // console.log(`progress>>${progress},currentFrame>>${currentFrame}`)
+                imgElem.src = videoImages[currentFrame].src
+            })
+        }
+    </script>
+</body>
+</html>

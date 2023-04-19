@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horizontal-3</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <style>
+        ::-webkit-scrollbar {width:15px; height:15px;}
+        ::-webkit-scrollbar-track{background:lightslategray;}
+        ::-webkit-scrollbar-thumb {
+            /* background:lightslategray; */
+            background:linear-gradient(to right, lightslategray, #fff, black); border-radius:10px;
+        }
+        html,body {
+            overflow-y:hidden;
+            width:max-content;
+        }
+        main {}
+        main section {}
+        main section .bg {
+            width:7000px; height:100vh;
+            background:
+            url(./game_background_3/layers/clouds_2.png),
+            url(./game_background_3/layers/ground_3.png),
+            url(./game_background_3/layers/clouds_1.png),
+            url(./game_background_3/layers/rocks.png),
+            url(./game_background_3/layers/sky.png);
+            background-position:center top, left, right, center;
+            background-attachment:scroll, fixed, scroll, fixed;
+        
+        }
+        main section .bg h1{
+            color:#fff; font-size:3rem; font-weight:700;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="bg">
+                <!-- <h1>portfolio 2023</h1> -->
+            </div>
+        </section>
+    </main>
+    <script>
+        const bg = document.querySelector('html,body')
+        console.log(bg)
+
+        bg.addEventListener('wheel',(e)=>{
+            bg.scrollLeft += e.deltaY
+        })
+        
+    </script>
+</body>
+</html>

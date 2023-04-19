@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video-2</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <style>
+        * {box-sizing:border-box;}
+        body {height:500vh; overflow-x:hidden;}
+        .container {}
+        .container video {
+            position:fixed; left:0; top:0;
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <video src="./video/video2.mp4" muted></video>
+    </div>
+    <script>
+        const videoTravel = document.querySelector('.container video')
+        console.log(videoTravel)
+
+        loadVideo()
+        function loadVideo(){
+            videoTravel.addEventListener('loadeddata',()=>{
+                console.log(videoTravel.duration)
+                scroll_video()
+            })
+        }
+        function scroll_video(){
+            window.addEventListener('scroll',()=>{
+                let progress = pageYOffset/(document.body.offsetHeight - window.innerHeight)
+                console.log(progress) 
+
+                videoTravel.currentTime = videoTravel.duration * progress
+            })
+        }
+    </script>
+</body>
+</html>

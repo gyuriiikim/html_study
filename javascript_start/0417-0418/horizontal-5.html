@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horizontal-5</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+        * {font-family:'Noto Sans KR'; box-sizing:border-box; margin:0; padding:0;}
+        header {}
+        main {}
+        main .first, main .last >p{
+            background:darkred; color:#fff; font-size:8rem;
+            line-height:100vh; width:100%; text-align:center;
+            text-transform:capitalize; font-family:'Satisfy';
+        }
+        main .first {}
+        main .scroll_wrap {}
+        main .scroll_wrap .height {
+            height:500vh;
+        }
+        main .scroll_wrap .height .sticky {
+            background:url(./images/car_bg.jpg) no-repeat;
+            position:sticky; top:0; height:20%;
+            background-size:cover; background-position:center;
+        }
+        main .scroll_wrap .height .sticky .container {}
+        main .scroll_wrap .height .sticky .container h1 {
+            color:#fff; font-size:10rem; font-family:'Satisfy';
+            white-space:nowrap; padding:500px 0; text-shadow:5px 2px 2px darkred; writing-mode:vertical-rl;
+            margin-left:80px; letter-spacing:-0.02em;
+        }
+        main .last {
+            position:relative;
+        }
+        main .last .txt {
+            position:absolute; bottom:10px;
+            font-size:7rem; white-space:nowrap; 
+            color:#000; background:rgba(255,255,255,0.5);
+        }
+        @keyframes font {
+        0% {background-position-x:0;}
+        100% {background-position-x:-10000px;}
+        }
+        footer {}
+    </style>
+</head>
+<body>
+    <main>
+        <section class="first">Cartier</section>
+        <!-- 스크롤 구간 시작(태그보다 층이 더 중요함) -->
+        <section class="scroll_wrap"> <!-- 전체툴 -->
+            <div class="height"> <!-- 스크린높이 -->
+                <div class="sticky"> <!--고정대상 -->
+                    <div class="container"> <!--내용삽입위치 -->
+                        <h1>SUBSCRIBE TO OUR NEWSLETTER SUBSCRIBE TO OUR NEWSLETTER</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 스크롤 구간 종료 -->
+        <section class="last">
+            <p>Thank You</p>
+            <div class="txt">SUBSCRIBE TO OUR NEWSLETTER SUBSCRIBE TO OUR NEWSLETTER</div>
+        </section>
+        
+    </main>
+    <script>
+        const scroll_wrap = document.querySelector('.scroll_wrap')
+        const scroll_container = document.querySelector('.scroll_wrap .container')
+        console.log(scroll_wrap, scroll_container)
+
+        window.addEventListener('scroll',()=>{
+            let yOffset = window.scrollY //윈도우 스크롤 확인 변수 생성
+            // console.log(yOffset)
+            console.log(scroll_wrap.offsetTop)
+            console.log(yOffset - scroll_wrap.offsetTop)
+            // 윈도우스크롤값과 스크롤랩탑값을 뺀 변수 생성
+            let amount = yOffset - scroll_wrap.offsetTop
+            if(yOffset >= scroll_wrap.offsetTop){
+                scroll_container.style.transform = `translateY(-${amount}px)`
+            }else {
+                scroll_container.style.transform = `translareY(0px)`
+            }
+        })
+    </script>
+</body>
+</html>
