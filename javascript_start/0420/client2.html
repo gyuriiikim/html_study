@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>client2</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <style>
+        body, html {cursor:none;}
+        .circle {
+            /* width:30px; height:30px; border-radius:50%;
+            border:2px solid #f0f; */
+            position:fixed; left:0; top:0;
+            /* transition:all 0.2s ease; */
+            transform:translate(-50%, -50%);
+            width:50px;
+        }
+        .circle img {width: 100%;}
+    </style>
+</head>
+<body>
+    <div class="circle">
+        <img src="./images/1922041_4c561.gif" alt="">
+    </div>
+</body>
+<script>
+    const circle = document.querySelector('.circle')
+    console.log(circle)
+
+    window.addEventListener('mousemove',(e)=>{
+        circle.style.left = `${e.clientX}px`
+        circle.style.top = `${e.clientY}px`
+    })
+</script>
+</html>

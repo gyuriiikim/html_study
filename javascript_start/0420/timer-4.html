@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer-4</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <style>
+        #slider_wrap {
+            border:5px solid #888;
+            width:700px; margin:0 auto; height:200px;
+            overflow:hidden;
+        }
+        #slider_wrap #slider_container {
+            position:relative;
+        }
+        #slider_wrap #slider_container .slide {
+            line-height:200px; width:700px; text-align:center; font-size:5rem; left:0; top:0; opacity:0; transition:opacity 0.5s;
+            position:absolute;
+        }
+        #slider_wrap #slider_container .slide1 {background:lightcoral;}
+        #slider_wrap #slider_container .slide2 {background:lightcyan;}
+        #slider_wrap #slider_container .slide3 {background:lightgoldenrodyellow;}
+    </style>
+</head>
+<body>
+    <div id="slider_wrap">
+        <div id="slider_container">
+            <div class="slide slide1">^^</div>
+            <div class="slide slide2">ㅎㅎ</div>
+            <div class="slide slide3">:)</div>
+        </div>
+    </div>
+    <script>
+        const slide = document.querySelectorAll('.slide')
+        let num = 0
+        let timer = setInterval(slide_timer, 1000)
+        // let count = slide.childElementCount-1
+        slide[0].style.opacity = 1
+        // 함수호출 방법
+        function slide_timer(){
+            num++
+            if(num > 2){
+                num = 0
+                for(let i of slide){i.style.opacity = 0}
+            }
+            slide[num].style.opacity = 1
+        }
+        // let slide_h = slide.firstElementChild.offsetHeight
+        // console.log(slide_h)
+        // setInterval(()=>{
+        //     num++
+        //     if(num > count){num = 0}
+        //         console.log(+num)
+        //         for(let i of slide){
+        //             slide.style.opacity = 
+        //         }
+        //         // slide.style.transform = `translateY(-${200*num}px)`
+        // },1500)
+    </script>
+</body>
+</html>

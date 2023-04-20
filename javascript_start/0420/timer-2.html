@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer-2</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <style>
+        #slider_wrap {
+            border:5px solid #000;
+            width:700px; margin:0 auto;
+            overflow:hidden;
+        }
+        #slider_wrap #slider_container {
+            width:max-content; display:flex;
+            transition:transform 0.5s;
+            /* transform:translateX(-0px);
+            transform:translateX(-700px);
+            transform:translateX(-1400px); */
+        }
+        #slider_wrap #slider_container .slide {
+            line-height:200px; width:700px; text-align:center; font-size:5rem;
+        }
+        #slider_wrap #slider_container .slide1 {background:lightcoral;}
+        #slider_wrap #slider_container .slide2 {background:lightcyan;}
+        #slider_wrap #slider_container .slide3 {background:lightgoldenrodyellow;}
+    </style>
+</head>
+<body>
+    <div id="slider_wrap">
+        <div id="slider_container">
+            <div class="slide slide1">1</div>
+            <div class="slide slide2">2</div>
+            <div class="slide slide3">3</div>
+        </div>
+    </div>
+    <script>
+        let num = 0
+        const slide = document.querySelector('#slider_container')
+        // slide의 자식의 너비
+        console.log(slide.firstElementChild.offsetWidth)//700
+        console.log(slide.children[0].offsetWidth)//700
+        let slide_w = slide.firstElementChild.offsetWidth
+        console.log(slide.children.length) //슬라이드 자식들의 갯수
+        console.log(slide.childElementCount)
+        let count = slide.childElementCount-1
+        setInterval(()=>{
+            // 120120120...
+            num++
+            if(num > count){num=0}
+                console.log(+num)
+                slide.style.transform = `translateX(-${slide_w*num}px)`
+        },1000)
+    </script>
+</body>
+</html>

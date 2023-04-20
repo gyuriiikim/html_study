@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer-3</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <style>
+        #slider_wrap {
+            border:5px solid #888;
+            width:700px; margin:0 auto; height:200px;
+            overflow:hidden;
+        }
+        #slider_wrap #slider_container {
+            width:max-content;
+            transition:transform 1s;
+        }
+        #slider_wrap #slider_container .slide {
+            line-height:200px; width:700px; text-align:center; font-size:5rem;
+        }
+        #slider_wrap #slider_container .slide1 {background:lightcoral;}
+        #slider_wrap #slider_container .slide2 {background:lightcyan;}
+        #slider_wrap #slider_container .slide3 {background:lightgoldenrodyellow;}
+    </style>
+</head>
+<body>
+    <div id="slider_wrap">
+        <div id="slider_container">
+            <div class="slide slide1">^^</div>
+            <div class="slide slide2">ㅎㅎ</div>
+            <div class="slide slide3">:)</div>
+        </div>
+    </div>
+    <script>
+        let num = 0 //120120120
+        const slide = document.querySelector('#slider_container')
+        let slide_h = slide.firstElementChild.offsetHeight
+        let count = slide.childElementCount-1
+        console.log(slide_h)
+        // setInterval(()=>{
+        //     num++
+        //     if(num > count){num = 0}
+        //         console.log(+num)
+        //         slide.style.transform = `translateY(-${200*num}px)`
+        // },1500)
+        // 함수호출 방법
+        let timer = setInterval(slide_set, 1000)
+
+        function slide_set(){
+            num++
+            if(num>count){num=0}
+            slide.style.transform = `translateY(-${200*num}px)`
+        }
+    </script>
+</body>
+</html>
