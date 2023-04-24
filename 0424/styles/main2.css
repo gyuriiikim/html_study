@@ -1,0 +1,55 @@
+/* --------------------------------------hedaer */
+header {
+    position:fixed; padding:20px 50px;
+    display:flex; flex-flow:row nowrap; z-index:800;
+    justify-content:space-between; width:100%;
+    align-items:center;
+}
+header h1 {}
+header h1 a {}
+header h1 a img {}
+header .menu {
+    color:#fff; font-size:1.5rem; font-weight:700;
+}
+/* --------------------------------------고정버튼 */
+.bottom {
+    position:fixed; bottom:50px; right:30px;
+}
+.bottom a {
+    border:2px solid #fff; border-radius:10px; padding:10px 20px;
+    color:#fff;
+}
+/* -------------------------------------- main */
+main {}
+main .wrap {height:100vh;}
+main .wrap1 {}
+main .wrap2 {}
+main .wrap3 {}
+main .wrap4 {}
+main .bg1 {background:url(../images/main_bg_new2.jpg);}
+main .bg2 {background:url(../images/main_con2_bg.jpg);}
+main .bg3 {background:url(../images/main_con3_bg.jpg);}
+main .bg4 {background:url(../images/main_con5_bg-.jpg);}
+main .bg {
+    background-repeat:no-repeat; background-position:center;
+    background-size:cover; height:100%;
+}
+main .bg h1 {
+    color:#fff; font-size:3.5rem; font-weight:700;
+    padding:100px; transition:all 0.5s;
+}
+main .bg1 h1 {text-align: center; line-height:90vh; color:#fff;}
+main .bg p {
+    color:#fff; line-height:1.5; padding:0 100px; margin-top:-80px;
+}
+/* ------------------------------------------footer */
+footer {
+    background:#000; padding:50px 100px;
+    display:flex; justify-content:space-around;
+    width:100%; align-items:center;
+}
+footer .left {}
+footer .left p {}
+footer .left p img {}
+footer .right {}
+footer .right p {color:#fff; }
