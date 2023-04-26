@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jq-1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./styles/reser.css">
+</head>
+<body>
+    <nav>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+    </nav>
+    <script>
+        // javascript DOM명령을 쉽게 작성할 수 있개 도와주는 jquery
+        const nav_a_js = document.querySelectorAll('nav a')
+        console.log(nav_a_js)
+        for(let i of nav_a_js){
+            i.style.backgroundColor = '#ff0'
+            i.style.display = 'none'
+        }
+
+        // jquery ver
+        // if, for, while, switch, function js 동일
+        const nav_a_jq = $('nav a')
+        console.log(nav_a_jq)
+        nav_a_jq.css('background-color','#0ff')
+        nav_a_jq.show() //display='block'
+        nav_a_jq.eq(0).hide() //eq : 이대상의 몇번째라는 뜻
+        nav_a_jq.eq(2).fadeOut(2000) //점점 사라진다 fadein():나타난다
+        nav_a_js.eq(3).slideUp() //위로
+    </script>
+</body>
+</html>
