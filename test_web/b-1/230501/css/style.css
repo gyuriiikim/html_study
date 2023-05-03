@@ -7,6 +7,7 @@
 body, html {background:#fff;}
 /* ------------------------------------------- popup */
 .popup {
+    display:none;
     background:#fff;
     width:500px; height:300px;
     position:absolute; left:50%; top:50%;
@@ -44,27 +45,36 @@ body, html {background:#fff;}
     display:flex;
 }
 .h_bg header nav > ul > li {position:relative;}
-.h_bg header nav > ul > li:first-child {background:#1f24ff;}
-.h_bg header nav > ul > li:first-child > a {color:#fff;}
 .h_bg header nav > ul > li > a {
     display:block; width:150px; text-align:center;
     line-height:45px; font-size:1.2rem; font-weight:600;
 }
+/* 메인 메뉴 중 하나에 마우스를 올리면(mouse over) 하이라이트 되고, 벗어나면(mouse out) 하이라이트를 해제한다. */
+.h_bg header nav > ul > li > a:hover {
+    background:#1f24ff; color:#fff;
+}
 .h_bg header nav > ul > li .sub {
-    background:#fff;
+    background:#fff; z-index:999;
     position:absolute; width:100%; height:200px;
 }
 .h_bg header nav > ul > li > .sub li {text-align:center;}
 .h_bg header nav > ul > li > .sub li a {
     line-height:40px; display:block; 
 }
+
+/* 서브 메뉴 중 하나에 마우스를 올리면(mouse over) 하이라이트 되고 벗어나면(mouse out) 하이라이트를 해제한다. */
 .h_bg header nav > ul > li > .sub li a:hover  {background:#1f24ff; color:#fff;}
 /* ------------------------------------------------- main  */
 main {width:1200px; margin:0 auto;}
 /* slide */
-main #slide_wrap {height:300px; overflow:hidden;}
-main #slide_wrap #slide_container {display:flex; width:max-content;}
-main #slide_wrap #slide_container .slide {width:1200px;}
+main #slide_wrap {width:1200px; height:300px; overflow:hidden;}
+/* 이미지가 좌에서 우 또는 우에서 좌로 이동하면서 전환되어야 한다.*/
+main #slide_wrap #slide_container {
+    display:flex; width:max-content;
+    /* 이동하면서 전환되어야한다. */
+    transition:transform 0.5s;
+}
+main #slide_wrap #slide_container .slide {}
 main #slide_wrap #slide_container .slide img {}
 main #slide_wrap #slide_container .slide1 {}
 main #slide_wrap #slide_container .slide2 {}
